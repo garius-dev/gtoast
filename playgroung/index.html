@@ -1,0 +1,293 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gtoast Playground - Garius Tech</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <link href="../src/css/gtoast.css" rel="stylesheet" />
+    <script src="../src/js/gtoast.js"></script>
+
+    <link href="src/css/index.css" rel="stylesheet" />
+
+    <style>
+        
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Gtoast Playground</h1>
+            <p>Experiment with Gtoast by Garius Tech - Customize and see it live!</p>
+            <img style="height: 30px; width: auto; margin-top: 1rem" src="https://img.shields.io/github/v/tag/garius-dev/gtoast?label=version&style=flat&color=green" alt="Version Badge">
+        </div>
+    </header>
+    <div class="container playground">
+        <div class="controls">
+            <h2>Controls</h2>
+            <form id="toast-form">
+                <div class="control-row">
+                    <div class="control-group">
+                        <label for="type">Toast Type</label>
+                        <select id="type" name="type">
+                            <option value="success">Success</option>
+                            <option value="error">Error</option>
+                            <option value="info">Info</option>
+                            <option value="warning">Warning</option>
+                        </select>
+                    </div>
+                    <div class="control-group">
+                        <label for="message">Message</label>
+                        <input type="text" id="message" name="message" value="Hello, Gtoast!">
+                    </div>
+                    <div class="control-group">
+                        <label for="title">Title (optional)</label>
+                        <input placeholder="(Title)" type="text" id="title" name="title" value="Notification">
+                    </div>
+                    <div class="control-group">
+                        <label for="positionClass">Position</label>
+                        <select id="positionClass" name="positionClass">
+                            <option value="top-left">Top Left</option>
+                            <option value="top-right" selected>Top Right</option>
+                            <option value="top-center">Top Center</option>
+                            <option value="bottom-left">Bottom Left</option>
+                            <option value="bottom-right">Bottom Right</option>
+                            <option value="bottom-center">Bottom Center</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="control-row">
+                    <div class="control-group">
+                        <label for="theme">Theme</label>
+                        <select id="theme" name="theme">
+                            <option value="light" selected>Light</option>
+                            <option value="dark">Dark</option>
+                            <option value="colored">Colored</option>
+                        </select>
+                    </div>
+                    <div class="control-group">
+                        <label for="transition">Transition</label>
+                        <select id="transition" name="transition">
+                            <option value="slide" selected>Slide</option>
+                            <option value="bounce">Bounce</option>
+                            <option value="zoom">Zoom</option>
+                            <option value="flip">Flip</option>
+                        </select>
+                    </div>
+                    <div class="control-group">
+                        <label for="autoClose">Auto Close (ms)</label>
+                        <input type="number" id="autoClose" name="autoClose" value="5000" min="0" step="100">
+                    </div>
+                    <div class="control-group">
+                        <label for="size">Size</label>
+                        <select id="size" name="size">
+                            <option value="sm" selected>Small (288px)</option>
+                            <option value="md">Medium (384px)</option>
+                            <option value="lg">Large (480px)</option>
+                            <option value="xl">Extra Large (576px)</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="control-row checkboxes">
+                    <div class="control-group checkbox">
+                        <input type="checkbox" id="closeButton" name="closeButton" checked>
+                        <label for="closeButton">Close Button</label>
+                    </div>
+                    <div class="control-group checkbox">
+                        <input type="checkbox" id="newestOnTop" name="newestOnTop" checked>
+                        <label for="newestOnTop">Newest on Top</label>
+                    </div>
+                    <div class="control-group checkbox">
+                        <input type="checkbox" id="progressBar" name="progressBar" checked>
+                        <label for="progressBar">Progress Bar</label>
+                    </div>
+                    <div class="control-group checkbox">
+                        <input type="checkbox" id="closeOnClick" name="closeOnClick">
+                        <label for="closeOnClick">Close on Click</label>
+                    </div>
+                    <div class="control-group checkbox">
+                        <input type="checkbox" id="resetOnHover" name="resetOnHover">
+                        <label for="resetOnHover">Reset on Hover</label>
+                    </div>
+                    <div class="control-group checkbox">
+                        <input type="checkbox" id="mobileView" name="mobileView">
+                        <label for="mobileView">Mobile View</label>
+                    </div>
+                </div>
+                <div class="control-row icons">
+                    <div class="control-group">
+                        <label for="successIcon">Success Icon</label>
+                        <textarea id="successIcon" name="successIcon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5" /></svg></textarea>
+                    </div>
+                    <div class="control-group">
+                        <label for="errorIcon">Error Icon</label>
+                        <textarea id="errorIcon" name="errorIcon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6L6 18M6 6l12 12" /></svg></textarea>
+                    </div>
+                    <div class="control-group">
+                        <label for="infoIcon">Info Icon</label>
+                        <textarea id="infoIcon" name="infoIcon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10" /><path d="M12 16v-4m0-4h.01" /></svg></textarea>
+                    </div>
+                    <div class="control-group">
+                        <label for="warningIcon">Warning Icon</label>
+                        <textarea id="warningIcon" name="warningIcon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 19h20L12 2zm0 4v8m0 4h.01" /></svg></textarea>
+                    </div>
+                    <div class="control-group">
+                        <label for="closeButtonIcon">Close Button Icon</label>
+                        <textarea id="closeButtonIcon" name="closeButtonIcon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6L6 18M6 6l12 12" /></svg></textarea>
+                    </div>
+                </div>
+                <div class="control-row full-width">
+                    <div class="control-group">
+                        <label for="config-output">Generated Config (Copy & Paste)</label>
+                        <textarea id="config-output" readonly></textarea>
+                    </div>
+                </div>
+                <div id="trigger-button-group" class="control-button-group">
+                    <button type="submit" class="playground-btn" id="show-toast-btn">Show Toast</button>
+                    <button type="button" class="playground-btn" id="show-promise-btn">Show Promise</button>
+                </div>
+                <div class="sticky-toggle">
+                    <div class="control-group checkbox">
+                        <input type="checkbox" id="stickyToggle" name="stickyToggle">
+                        <label for="stickyToggle">😴 Tired of scrolling the page? Click here</label>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <footer>
+        <div class="container">
+            Made with ❤️ by <a href="https://gariustech.com" target="_blank">Garius Tech</a> | <a href="https://github.com/garius-dev/gtoast" target="_blank">GitHub</a>
+        </div>
+    </footer>
+
+    <script>
+        const toast = new Gtoast();
+        const form = document.getElementById('toast-form');
+        const configOutput = document.getElementById('config-output');
+        const showToastBtn = document.getElementById('show-toast-btn');
+        const showPromiseBtn = document.getElementById('show-promise-btn');
+        const stickyToggle = document.getElementById('stickyToggle');
+        const triggerButtonGroup = document.getElementById('trigger-button-group');
+
+        function updateConfig() {
+            const options = {
+                closeButton: form.closeButton.checked,
+                newestOnTop: form.newestOnTop.checked,
+                progressBar: form.progressBar.checked,
+                positionClass: form.positionClass.value,
+                autoClose: parseInt(form.autoClose.value) || false,
+                theme: form.theme.value,
+                transition: form.transition.value,
+                closeOnClick: form.closeOnClick.checked,
+                resetOnHover: form.resetOnHover.checked,
+                size: form.size.value,
+                mobileView: form.mobileView.checked,
+                successIcon: form.successIcon.value,
+                errorIcon: form.errorIcon.value,
+                infoIcon: form.infoIcon.value,
+                warningIcon: form.warningIcon.value,
+                closeButtonIcon: form.closeButtonIcon.value
+            };
+
+            const type = form.type.value;
+            const message = form.message.value;
+            const title = form.title.value || null;
+
+            let configStr = `const toast = new Gtoast({\n`;
+            Object.entries(options).forEach(([key, value]) => {
+                if (typeof value === 'boolean') {
+                    configStr += `    ${key}: ${value},\n`;
+                } else if (typeof value === 'number' && value !== false) {
+                    configStr += `    ${key}: ${value},\n`;
+                } else if (value !== null && value !== '') {
+                    configStr += `    ${key}: '${value}',\n`;
+                }
+            });
+            configStr = configStr.slice(0, -2);
+            configStr += `\n});\n\n`;
+            configStr += `toast.${type}('${message}'${title ? `, '${title}'` : ''}, { size: '${options.size}', mobileView: ${options.mobileView} });`;
+
+            configOutput.value = configStr;
+        }
+
+        updateConfig();
+        form.addEventListener('input', updateConfig);
+
+        form.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const options = {
+                closeButton: form.closeButton.checked,
+                newestOnTop: form.newestOnTop.checked,
+                progressBar: form.progressBar.checked,
+                positionClass: form.positionClass.value,
+                autoClose: parseInt(form.autoClose.value) || false,
+                theme: form.theme.value,
+                transition: form.transition.value,
+                closeOnClick: form.closeOnClick.checked,
+                resetOnHover: form.resetOnHover.checked,
+                size: form.size.value,
+                mobileView: form.mobileView.checked,
+                successIcon: form.successIcon.value,
+                errorIcon: form.errorIcon.value,
+                infoIcon: form.infoIcon.value,
+                warningIcon: form.warningIcon.value,
+                closeButtonIcon: form.closeButtonIcon.value
+            };
+            const type = form.type.value;
+            const message = form.message.value;
+            const title = form.title.value || null;
+
+            toast[type](message, title, options);
+        });
+
+        showPromiseBtn.addEventListener('click', () => {
+            const options = {
+                closeButton: form.closeButton.checked,
+                newestOnTop: form.newestOnTop.checked,
+                progressBar: form.progressBar.checked,
+                positionClass: form.positionClass.value,
+                autoClose: parseInt(form.autoClose.value) || false,
+                theme: form.theme.value,
+                transition: form.transition.value,
+                closeOnClick: form.closeOnClick.checked,
+                resetOnHover: form.resetOnHover.checked,
+                size: form.size.value,
+                mobileView: form.mobileView.checked,
+                successIcon: form.successIcon.value,
+                errorIcon: form.errorIcon.value,
+                infoIcon: form.infoIcon.value,
+                warningIcon: form.warningIcon.value,
+                closeButtonIcon: form.closeButtonIcon.value
+            };
+
+            const testPromise = new Promise((resolve, reject) => {
+                const randomTime = Math.random() * (4000 - 2000) + 2000;
+                setTimeout(() => {
+                    Math.random() > 0.5 ? resolve('Success!') : reject('Error!');
+                }, randomTime);
+            });
+
+            toast.promise(testPromise, {
+                pending: "Waiting for promise...",
+                success: form.message.value,
+                error: "Something went wrong!"
+            }, options);
+        });
+
+        stickyToggle.addEventListener('change', () => {
+            if (stickyToggle.checked) {
+                triggerButtonGroup.classList.add('sticky');
+            } else {
+                triggerButtonGroup.classList.remove('sticky');
+            }
+        });
+    </script>
+</body>
+</html>

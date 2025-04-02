@@ -1,0 +1,33 @@
+{
+  "name": "gtoast",
+  "version": "1.0.0",
+  "description": "A lightweight, customizable, and dependency-free toast notification library",
+  "main": "dist/gtoast.min.js",
+  "style": "dist/gtoast.min.css",
+  "scripts": {
+    "build:js": "terser src/js/gtoast.js -o dist/gtoast.min.js",
+    "build:css": "cleancss -o dist/gtoast.min.css src/css/gtoast.css",
+    "build": "npm run build:js && npm run build:css",
+    "release": "standard-version"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/garius-dev/gtoast.git"
+  },
+  "keywords": [
+    "toast",
+    "notification",
+    "javascript"
+  ],
+  "author": "Garius Tech",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/garius-dev/gtoast/issues"
+  },
+  "homepage": "https://github.com/garius-dev/gtoast#readme",
+  "devDependencies": {
+    "clean-css-cli": "^5.6.3",
+    "standard-version": "^9.5.0",
+    "terser": "^5.29.2"
+  }
+}

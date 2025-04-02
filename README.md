@@ -13,7 +13,7 @@ A lightweight, customizable, and dependency-free toast notification library by *
 
 
 ## Live Demo
-🎮 <a href="https://garius-dev.github.io/gtoast/Playground.html" target="_blank" rel="noopener noreferrer">
+🎮 <a href="https://garius-dev.github.io/gtoast/playgroung/" target="_blank" rel="noopener noreferrer">
   **Live Demo Available Here**
 </a>
 

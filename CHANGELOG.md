@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.0.2](https://github.com/garius-dev/gtoast/compare/v1.0.1...v1.0.2) (2025-04-08)
+
+
+### Bug Fixes
+
+* add min files ([367b866](https://github.com/garius-dev/gtoast/commit/367b8665e5c26d73b10c3214dc984d95b8f497a7))
+
 ### [1.0.1](https://github.com/garius-dev/gtoast/compare/v1.0.0...v1.0.1) (2025-04-08)
 
 

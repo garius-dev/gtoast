@@ -161,7 +161,6 @@
 
         const closeButton = toast.querySelector('.gtoast-close-button');
 
-
         if (closeButton) {
             closeButton.addEventListener('click', (e) => {
                 e.stopPropagation();

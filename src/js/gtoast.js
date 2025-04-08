@@ -172,8 +172,6 @@
         if (options.closeOnClick && !toast.classList.contains('gtoast-promise-pending')) {
             toast.addEventListener('click', () => this.close(toast, options));
         }
-
-
     }
 
     setupTouchEvents(toast, options) {

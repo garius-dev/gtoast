@@ -1,6 +1,6 @@
 {
   "name": "gtoast",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A lightweight, customizable, and dependency-free toast notification library",
   "main": "dist/gtoast.min.js",
   "style": "dist/gtoast.min.css",

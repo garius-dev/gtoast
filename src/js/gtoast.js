@@ -129,7 +129,7 @@
     }
 
     // Display a modal-style toast
-    modal(message, title = null, options = {}, callback = () => { }) {
+    modal(message, title = null, options = {}, callback) {
         const modalOptions = { ...this.options, ...options, positionClass: 'center-center', closeButton: false, closeOnClick: false };
         modalOptions.size = modalOptions.size === 'sm' ? 'md' : modalOptions.size; // Default to medium size for modals
 
@@ -173,22 +173,6 @@
             backdrop = document.createElement('div');
             backdrop.className = `gtoast-backdrop gtoast-backdrop-enter--${modalOptions.positionClass}`;
             container.appendChild(backdrop);
-            if (modalOptions.backdropClose) {
-                const closeModal = () => {
-                    this.close(toast, modalOptions, { backdrop, transition });
-                };
-                backdrop.addEventListener('click', (e) => {
-                    if (e.target === backdrop) {
-                        callback('backdrop', closeModal);
-                        // Fallback: close modal after autoClose time if not -1
-                        if (modalOptions.autoClose >= 0) {
-                            setTimeout(() => {
-                                closeModal();
-                            }, modalOptions.autoClose);
-                        }
-                    }
-                });
-            }
         }
 
         // Create the modal element
@@ -232,14 +216,21 @@
             this.close(toast, modalOptions, { backdrop, transition });
         };
 
+        
+
+
+        // Setup backdrop close if enabled
+        if (modalOptions.backdrop && modalOptions.backdropClose) {
+            backdrop.addEventListener('click', (e) => {
+                if (e.target === backdrop) {
+                    closeModal();
+                }
+            });
+        }
+
         const handleEsc = (e) => {
             if (e.key === 'Escape') {
-                callback('esc', closeModal);
-                if (modalOptions.autoClose !== -1) {
-                    setTimeout(() => {
-                        closeModal();
-                    }, modalOptions.autoClose);
-                }
+                closeModal();
                 document.removeEventListener('keydown', handleEsc);
             }
         };
@@ -262,6 +253,8 @@
             this.close(toast, options, { backdrop, transition });
         };
 
+        
+
         for (const [type, btnConfig] of Object.entries(dialogButtons)) {
             if (btnConfig.show) {
                 buttonsHtml += `
@@ -278,7 +271,14 @@
             buttons.forEach(button => {
                 button.addEventListener('click', (e) => {
                     const buttonType = button.getAttribute('data-type');
-                    callback(buttonType, closeModal, buttons, button);
+                    debugger
+                    if (callback && buttonType !== 'cancel') {
+                        // If a callback is provided, use it and pass closeModal for manual control
+                        callback(buttonType, closeModal, buttons, button);
+                    } else {
+                        // Default behavior: close the modal
+                        closeModal();
+                    }
                 });
             });
         }, 0);

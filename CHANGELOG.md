@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.1.2](https://github.com/garius-dev/gtoast/compare/v1.1.1...v1.1.2) (2025-04-10)
+
+
+### Bug Fixes
+
+* backdrop and cancel now has default callback ([1c0ecd0](https://github.com/garius-dev/gtoast/commit/1c0ecd0d29729cde2b59c31ecf1fdefe510d01be))
+
 ### [1.1.1](https://github.com/garius-dev/gtoast/compare/v1.1.0...v1.1.1) (2025-04-10)
 
 

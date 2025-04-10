@@ -228,7 +228,9 @@
 
         const handleEsc = (e) => {
             if (e.key === 'Escape') {
-                closeModal();
+                if (modalOptions.backdrop && modalOptions.backdropClose) {
+                    closeModal();
+                }
                 document.removeEventListener('keydown', handleEsc);
             }
         };

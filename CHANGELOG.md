@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.1.0](https://github.com/garius-dev/gtoast/compare/v1.0.0...v1.1.0) (2025-04-10)
+
+
+### Features
+
+* add modal feature ([b861031](https://github.com/garius-dev/gtoast/commit/b86103176287e5936292a8428d9a0e0128013aab))
+
+
+### Bug Fixes
+
+* add min files ([d183ee5](https://github.com/garius-dev/gtoast/commit/d183ee56f22aa92bb8d30d4dbc000af6ffd30bab))
+* add support to swipe ([cc7a6f1](https://github.com/garius-dev/gtoast/commit/cc7a6f11b71a49bfa29502f05c3cb85e37e7a49c))
+
 ### [1.0.2](https://github.com/garius-dev/gtoast/compare/v1.0.1...v1.0.2) (2025-04-08)
 
 

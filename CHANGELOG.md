@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.2.0](https://github.com/garius-dev/gtoast/compare/v1.1.2...v1.2.0) (2025-04-10)
+
+
+### Features
+
+* change callback to chainable promise-like ([0bf4088](https://github.com/garius-dev/gtoast/commit/0bf4088a2759ad76133f3997a0706840ebcccae5))
+
 ### [1.1.2](https://github.com/garius-dev/gtoast/compare/v1.1.1...v1.1.2) (2025-04-10)
 
 

@@ -210,7 +210,7 @@
         // Construct modal HTML
         toast.innerHTML = `
             <div class="gtoast-modal-inner">
-                ${modalOptions.progressBar && modalOptions.autoClose >= 0 ? '<div class="gtoast-progress-container"><div class="gtoast-progress-bg"></div><div class="gtoast-progress"></div></div>' : ''}
+                ${modalOptions.progressBar ? '<div class="gtoast-progress-container"><div class="gtoast-progress-bg"></div><div class="gtoast-progress"></div></div>' : ''}
                 <div class="gtoast-icon">
                     ${this.getIcon(options.type || 'info', modalOptions)}
                 </div>

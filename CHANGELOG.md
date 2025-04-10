@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.1.1](https://github.com/garius-dev/gtoast/compare/v1.1.0...v1.1.1) (2025-04-10)
+
+
+### Bug Fixes
+
+* mantain progressbar of the modal if configured even if autoClose has no time ([63580a7](https://github.com/garius-dev/gtoast/commit/63580a762c85e963984bb40798b0eb0af19ab716))
+
 ## [1.1.0](https://github.com/garius-dev/gtoast/compare/v1.0.0...v1.1.0) (2025-04-10)
 
 

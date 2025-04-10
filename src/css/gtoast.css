@@ -227,6 +227,43 @@
     --gtoast-opacity-progressbar-bg-error: .2;
     --gtoast-color-progressbar-error: #e74d3c;
     --gtoast-opacity-progressbar-error: .7;
+    /* - BUTTONS */
+    /* - - SUCCESS */
+    --gtoast-color-button-ok-bg-success: #07bc0c;
+    --gtoast-color-button-ok-text-success: #fff;
+    --gtoast-color-button-yes-bg-success: #07bc0c;
+    --gtoast-color-button-yes-text-success: #fff;
+    --gtoast-color-button-no-bg-success: #7f8c8d;
+    --gtoast-color-button-no-text-success: #fff;
+    --gtoast-color-button-cancel-bg-success: #ecf0f1;
+    --gtoast-color-button-cancel-text-success: #2c3e50;
+    /* - - INFO */
+    --gtoast-color-button-ok-bg-info: #3498db;
+    --gtoast-color-button-ok-text-info: #fff;
+    --gtoast-color-button-yes-bg-info: #3498db;
+    --gtoast-color-button-yes-text-info: #fff;
+    --gtoast-color-button-no-bg-info: #7f8c8d;
+    --gtoast-color-button-no-text-info: #fff;
+    --gtoast-color-button-cancel-bg-info: #ecf0f1;
+    --gtoast-color-button-cancel-text-info: #2c3e50;
+    /* - - WARNING */
+    --gtoast-color-button-ok-bg-warning: #f1c40f;
+    --gtoast-color-button-ok-text-warning: #fff;
+    --gtoast-color-button-yes-bg-warning: #f1c40f;
+    --gtoast-color-button-yes-text-warning: #fff;
+    --gtoast-color-button-no-bg-warning: #7f8c8d;
+    --gtoast-color-button-no-text-warning: #fff;
+    --gtoast-color-button-cancel-bg-warning: #ecf0f1;
+    --gtoast-color-button-cancel-text-warning: #2c3e50;
+    /* - - ERROR */
+    --gtoast-color-button-ok-bg-error: #e74d3c;
+    --gtoast-color-button-ok-text-error: #fff;
+    --gtoast-color-button-yes-bg-error: #e74d3c;
+    --gtoast-color-button-yes-text-error: #fff;
+    --gtoast-color-button-no-bg-error: #7f8c8d;
+    --gtoast-color-button-no-text-error: #fff;
+    --gtoast-color-button-cancel-bg-error: #ecf0f1;
+    --gtoast-color-button-cancel-text-error: #2c3e50;
 }
 
 
@@ -283,6 +320,43 @@
     --gtoast-opacity-progressbar-bg-error: .2;
     --gtoast-color-progressbar-error: #f87171;
     --gtoast-opacity-progressbar-error: .7;
+    /* - BUTTONS */
+    /* - - SUCCESS */
+    --gtoast-color-button-ok-bg-success: #34d399;
+    --gtoast-color-button-ok-text-success: #fff;
+    --gtoast-color-button-yes-bg-success: #34d399;
+    --gtoast-color-button-yes-text-success: #fff;
+    --gtoast-color-button-no-bg-success: #7f8c8d;
+    --gtoast-color-button-no-text-success: #fff;
+    --gtoast-color-button-cancel-bg-success: #ecf0f1;
+    --gtoast-color-button-cancel-text-success: #2c3e50;
+    /* - - INFO */
+    --gtoast-color-button-ok-bg-info: #60a5fa;
+    --gtoast-color-button-ok-text-info: #fff;
+    --gtoast-color-button-yes-bg-info: #60a5fa;
+    --gtoast-color-button-yes-text-info: #fff;
+    --gtoast-color-button-no-bg-info: #7f8c8d;
+    --gtoast-color-button-no-text-info: #fff;
+    --gtoast-color-button-cancel-bg-info: #ecf0f1;
+    --gtoast-color-button-cancel-text-info: #2c3e50;
+    /* - - WARNING */
+    --gtoast-color-button-ok-bg-warning: #facc15;
+    --gtoast-color-button-ok-text-warning: #fff;
+    --gtoast-color-button-yes-bg-warning: #facc15;
+    --gtoast-color-button-yes-text-warning: #fff;
+    --gtoast-color-button-no-bg-warning: #7f8c8d;
+    --gtoast-color-button-no-text-warning: #fff;
+    --gtoast-color-button-cancel-bg-warning: #ecf0f1;
+    --gtoast-color-button-cancel-text-warning: #2c3e50;
+    /* - - ERROR */
+    --gtoast-color-button-ok-bg-error: #f87171;
+    --gtoast-color-button-ok-text-error: #fff;
+    --gtoast-color-button-yes-bg-error: #f87171;
+    --gtoast-color-button-yes-text-error: #fff;
+    --gtoast-color-button-no-bg-error: #7f8c8d;
+    --gtoast-color-button-no-text-error: #fff;
+    --gtoast-color-button-cancel-bg-error: #ecf0f1;
+    --gtoast-color-button-cancel-text-error: #2c3e50;
 }
 
 .gtoast[data-theme="colored"] {
@@ -338,6 +412,43 @@
     --gtoast-opacity-progressbar-bg-error: .2;
     --gtoast-color-progressbar-error: rgba(255, 255, 255, .7);
     --gtoast-opacity-progressbar-error: .7;
+    /* - BUTTONS */
+    /* - - SUCCESS */
+    --gtoast-color-button-ok-bg-success: #fff;
+    --gtoast-color-button-ok-text-success: #34d399;
+    --gtoast-color-button-yes-bg-success: #fff;
+    --gtoast-color-button-yes-text-success: #34d399;
+    --gtoast-color-button-no-bg-success: #fff;
+    --gtoast-color-button-no-text-success: #7f8c8d;
+    --gtoast-color-button-cancel-bg-success: #efefef;
+    --gtoast-color-button-cancel-text-success: #2c3e50;
+    /* - - INFO */
+    --gtoast-color-button-ok-bg-info: #fff;
+    --gtoast-color-button-ok-text-info: #3498db;
+    --gtoast-color-button-yes-bg-info: #fff;
+    --gtoast-color-button-yes-text-info: #3498db;
+    --gtoast-color-button-no-bg-info: #fff;
+    --gtoast-color-button-no-text-info: #7f8c8d;
+    --gtoast-color-button-cancel-bg-info: #efefef;
+    --gtoast-color-button-cancel-text-info: #2c3e50;
+    /* - - WARNING */
+    --gtoast-color-button-ok-bg-warning: #fff;
+    --gtoast-color-button-ok-text-warning: #facc15;
+    --gtoast-color-button-yes-bg-warning: #fff;
+    --gtoast-color-button-yes-text-warning: #facc15;
+    --gtoast-color-button-no-bg-warning: #fff;
+    --gtoast-color-button-no-text-warning: #7f8c8d;
+    --gtoast-color-button-cancel-bg-warning: #efefef;
+    --gtoast-color-button-cancel-text-warning: #2c3e50;
+    /* - - ERROR */
+    --gtoast-color-button-ok-bg-error: #fff;
+    --gtoast-color-button-ok-text-error: #f87171;
+    --gtoast-color-button-yes-bg-error: #fff;
+    --gtoast-color-button-yes-text-error: #f87171;
+    --gtoast-color-button-no-bg-error: #fff;
+    --gtoast-color-button-no-text-error: #7f8c8d;
+    --gtoast-color-button-cancel-bg-error: #efefef;
+    --gtoast-color-button-cancel-text-error: #2c3e50;
 }
 
 /* Tipos de gtoast */
@@ -949,4 +1060,471 @@
 
 .Gtoast__zoom-enter {
     animation-name: Gtoast__zoomIn;
+}
+
+
+
+
+
+
+
+
+/* Estilo para o container do modal */
+.gtoast-center-center {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000000;
+    padding: 12px; /* Margem pequena para telas pequenas */
+}
+
+/* Estilo do backdrop */
+.gtoast-backdrop {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    pointer-events: auto;
+}
+
+/* Estilo do modal */
+.gtoast-modal {
+    position: relative;
+    width: var(--gtoast-width, 400px);
+    max-width: 100%; /* Responsividade */
+    min-height: 120px;
+    background: var(--gtoast-color-card-info);
+    color: var(--gtoast-color-message-info);
+    opacity: var(--gtoast-opacity-card-info);
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    z-index: 2;
+    pointer-events: auto;
+}
+
+/* Container interno do modal */
+.gtoast-modal-inner {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    width: 100%;
+    gap: 12px; /* Espaçamento entre ícone e conteúdo */
+}
+
+/* Ícone à esquerda */
+.gtoast-modal .gtoast-icon {
+    font-size: 28px;
+    line-height: 28px;
+    display: flex;
+    align-items: center;
+    align-self: flex-start;
+}
+
+    .gtoast-modal .gtoast-icon svg {
+        width: 28px;
+        height: 28px;
+        flex-shrink: 0;
+    }
+
+/* Conteúdo à direita (título, mensagem, botões) */
+.gtoast-modal-content {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+    gap: 8px; /* Espaçamento entre título, mensagem e botões */
+}
+
+    /* Título */
+    .gtoast-modal-content .gtoast-title {
+        font-family: 'Poppins', sans-serif;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 16px;
+    }
+
+    /* Mensagem */
+    .gtoast-modal-content .gtoast-message {
+        font-family: 'Poppins', sans-serif;
+        font-weight: 400;
+        word-break: break-word;
+        font-size: 14px;
+    }
+
+    /* Botões */
+    .gtoast-modal-content .gtoast-modal-buttons {
+        display: flex;
+        gap: 8px;
+        justify-content: flex-end;
+        margin-top: 12px;
+    }
+
+.gtoast-modal-button {
+    padding: 6px 12px;
+    min-width: 50px;
+    border: none;
+    border-radius: 4px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background 0.2s ease-in-out;
+    pointer-events: auto;
+}
+
+/* SUCCESS */
+.gtoast-success.gtoast-modal {
+    background: var(--gtoast-color-card-success);
+    color: var(--gtoast-color-message-success);
+    opacity: var(--gtoast-opacity-card-success);
+}
+
+    .gtoast-success.gtoast-modal .gtoast-title {
+        color: var(--gtoast-color-title-success);
+    }
+
+    .gtoast-success.gtoast-modal .gtoast-message {
+        color: var(--gtoast-color-message-success);
+    }
+
+    .gtoast-success.gtoast-modal .gtoast-icon {
+        color: var(--gtoast-color-icon-success);
+    }
+
+    .gtoast-success.gtoast-modal .gtoast-modal-btn-ok {
+        background: var(--gtoast-color-button-ok-bg-success);
+        color: var(--gtoast-color-button-ok-text-success);
+    }
+
+    .gtoast-success.gtoast-modal .gtoast-modal-btn-yes {
+        background: var(--gtoast-color-button-yes-bg-success);
+        color: var(--gtoast-color-button-yes-text-success);
+    }
+
+    .gtoast-success.gtoast-modal .gtoast-modal-btn-no {
+        background: var(--gtoast-color-button-no-bg-success);
+        color: var(--gtoast-color-button-no-text-success);
+    }
+
+    .gtoast-success.gtoast-modal .gtoast-modal-btn-cancel {
+        background: var(--gtoast-color-button-cancel-bg-success);
+        color: var(--gtoast-color-button-cancel-text-success);
+    }
+
+
+/* INFO */
+.gtoast-info.gtoast-modal {
+    background: var(--gtoast-color-card-info);
+    color: var(--gtoast-color-message-info);
+    opacity: var(--gtoast-opacity-card-info);
+}
+
+    .gtoast-info.gtoast-modal .gtoast-title {
+        color: var(--gtoast-color-title-info);
+    }
+
+    .gtoast-info.gtoast-modal .gtoast-message {
+        color: var(--gtoast-color-message-info);
+    }
+
+    .gtoast-info.gtoast-modal .gtoast-icon {
+        color: var(--gtoast-color-icon-info);
+    }
+
+    .gtoast-info.gtoast-modal .gtoast-modal-btn-ok {
+        background: var(--gtoast-color-button-ok-bg-info);
+        color: var(--gtoast-color-button-ok-text-info);
+    }
+
+    .gtoast-info.gtoast-modal .gtoast-modal-btn-yes {
+        background: var(--gtoast-color-button-yes-bg-info);
+        color: var(--gtoast-color-button-yes-text-info);
+    }
+
+    .gtoast-info.gtoast-modal .gtoast-modal-btn-no {
+        background: var(--gtoast-color-button-no-bg-info);
+        color: var(--gtoast-color-button-no-text-info);
+    }
+
+    .gtoast-info.gtoast-modal .gtoast-modal-btn-cancel {
+        background: var(--gtoast-color-button-cancel-bg-info);
+        color: var(--gtoast-color-button-cancel-text-info);
+    }
+
+/* WARNING */
+.gtoast-warning.gtoast-modal {
+    background: var(--gtoast-color-card-warning);
+    color: var(--gtoast-color-message-warning);
+    opacity: var(--gtoast-opacity-card-warning);
+}
+
+    .gtoast-warning.gtoast-modal .gtoast-title {
+        color: var(--gtoast-color-title-warning);
+    }
+
+    .gtoast-warning.gtoast-modal .gtoast-message {
+        color: var(--gtoast-color-message-warning);
+    }
+
+    .gtoast-warning.gtoast-modal .gtoast-icon {
+        color: var(--gtoast-color-icon-warning);
+    }
+
+    .gtoast-warning.gtoast-modal .gtoast-modal-btn-ok {
+        background: var(--gtoast-color-button-ok-bg-warning);
+        color: var(--gtoast-color-button-ok-text-warning);
+    }
+
+    .gtoast-warning.gtoast-modal .gtoast-modal-btn-yes {
+        background: var(--gtoast-color-button-yes-bg-warning);
+        color: var(--gtoast-color-button-yes-text-warning);
+    }
+
+    .gtoast-warning.gtoast-modal .gtoast-modal-btn-no {
+        background: var(--gtoast-color-button-no-bg-warning);
+        color: var(--gtoast-color-button-no-text-warning);
+    }
+
+    .gtoast-warning.gtoast-modal .gtoast-modal-btn-cancel {
+        background: var(--gtoast-color-button-cancel-bg-warning);
+        color: var(--gtoast-color-button-cancel-text-warning);
+    }
+
+/* ERROR */
+.gtoast-error.gtoast-modal {
+    background: var(--gtoast-color-card-error);
+    color: var(--gtoast-color-message-error);
+    opacity: var(--gtoast-opacity-card-error);
+}
+
+    .gtoast-error.gtoast-modal .gtoast-title {
+        color: var(--gtoast-color-title-error);
+    }
+
+    .gtoast-error.gtoast-modal .gtoast-message {
+        color: var(--gtoast-color-message-error);
+    }
+
+    .gtoast-error.gtoast-modal .gtoast-icon {
+        color: var(--gtoast-color-icon-error);
+    }
+
+    .gtoast-error.gtoast-modal .gtoast-modal-btn-ok {
+        background: var(--gtoast-color-button-ok-bg-error);
+        color: var(--gtoast-color-button-ok-text-error);
+    }
+
+    .gtoast-error.gtoast-modal .gtoast-modal-btn-yes {
+        background: var(--gtoast-color-button-yes-bg-error);
+        color: var(--gtoast-color-button-yes-text-error);
+    }
+
+    .gtoast-error.gtoast-modal .gtoast-modal-btn-no {
+        background: var(--gtoast-color-button-no-bg-error);
+        color: var(--gtoast-color-button-no-text-error);
+    }
+
+    .gtoast-error.gtoast-modal .gtoast-modal-btn-cancel {
+        background: var(--gtoast-color-button-cancel-bg-error);
+        color: var(--gtoast-color-button-cancel-text-error);
+    }
+
+
+    /* Estilos padrão para os botões */
+    /*.gtoast-modal-btn-yes {
+    background: #3498db;
+    color: #ffffff;
+}
+
+    .gtoast-modal-btn-yes:hover {
+        background: #2980b9;
+    }
+
+.gtoast-modal-btn-ok {
+    background: #3498db;
+    color: #ffffff;
+}
+
+    .gtoast-modal-btn-ok:hover {
+        background: #2980b9;
+    }
+
+.gtoast-modal-btn-no {
+    background: #7f8c8d;
+    color: #ffffff;
+}
+
+    .gtoast-modal-btn-no:hover {
+        background: #6c757d;
+    }
+
+.gtoast-modal-btn-cancel {
+    background: #ecf0f1;
+    color: #2c3e50;
+}
+
+    .gtoast-modal-btn-cancel:hover {
+        background: #dfe6e9;
+    }*/
+    /* Ajustes para o tema dark */
+    /*.gtoast[data-theme="dark"] .gtoast-modal {
+    background: var(--gtoast-color-card-info);
+    color: var(--gtoast-color-message-info);
+}
+
+.gtoast[data-theme="dark"] .gtoast-modal-cancel {
+    background: #34495e;
+    color: #ecf0f1;
+}
+
+    .gtoast[data-theme="dark"] .gtoast-modal-cancel:hover {
+        background: #2c3e50;
+    }*/
+    /* Ajustes para o tema colored */
+    /*.gtoast[data-theme="colored"] .gtoast-modal {
+    background: var(--gtoast-color-card-info);
+    color: var(--gtoast-color-message-info);
+}
+
+.gtoast[data-theme="colored"] .gtoast-modal-cancel {
+    background: rgba(255, 255, 255, 0.2);
+    color: #ffffff;
+}
+
+    .gtoast[data-theme="colored"] .gtoast-modal-cancel:hover {
+        background: rgba(255, 255, 255, 0.3);
+    }*/
+    /* Animações do backdrop */
+    .gtoast-backdrop-enter--center-center {
+        animation: gtoast-backdrop-enter 0.3s ease-out both;
+    }
+
+.gtoast-backdrop-exit--center-center {
+    animation: gtoast-backdrop-exit 0.3s ease-in both;
+}
+
+@keyframes gtoast-backdrop-enter {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes gtoast-backdrop-exit {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+/* Animações para o modal (apenas zoom e flip) */
+.gtoast-zoom-enter--center-center {
+    animation: Gtoast__zoomIn 0.3s both;
+}
+
+.gtoast-zoom-exit--center-center {
+    animation: Gtoast__zoomOut 0.3s both;
+}
+
+.gtoast-flip-enter--center-center {
+    animation: Gtoast__flipIn 0.7s both;
+}
+
+.gtoast-flip-exit--center-center {
+    animation: Gtoast__flipOut 0.7s both;
+}
+
+/* Bloquear rolagem e interações no body */
+.gtoast-modal-open {
+    overflow: hidden !important;
+    height: 100%;
+    width: 100%;
+}
+
+/* Desativar interações com o body */
+body.gtoast-modal-open > *:not(.gtoast-container) {
+    pointer-events: none !important;
+}
+
+/* Garantir que o modal e seus filhos sejam clicáveis */
+.gtoast-center-center,
+.gtoast-center-center * {
+    pointer-events: auto !important;
+}
+
+/* Restaurar interações quando o modal é fechado */
+body:not(.gtoast-modal-open) > * {
+    pointer-events: auto !important;
+}
+
+/* Responsividade para telas pequenas */
+@media (max-width: 480px) {
+
+    .gtoast-center-center {
+        padding: 0;
+    }
+
+    .gtoast-modal-content .gtoast-modal-buttons {
+        justify-content: center;
+    }
+
+    .gtoast-modal .gtoast-icon {
+        font-size: 24px;
+        line-height: 24px;
+    }
+
+    .gtoast-modal .gtoast-icon svg {
+        width: 24px;
+        height: 24px;
+    }
+
+    .gtoast-modal {
+        width: calc(100% - 24px); /* Margem pequena nas laterais */
+        max-width: none;
+        padding: 12px; /* Reduzir o padding interno */
+    }
+
+    .gtoast-modal-inner {
+        flex-direction: column; /* Empilhar ícone e conteúdo em telas pequenas */
+        align-items: flex-start;
+        gap: 8px; /* Reduzir o gap */
+    }
+
+    .gtoast-modal .gtoast-icon {
+        margin-right: 0;
+    }
+
+    .gtoast-modal-content {
+        width: 100%;
+        gap: 4px; /* Reduzir o gap entre título e mensagem */
+    }
+
+    .gtoast-modal-buttons {
+        flex-wrap: wrap; /* Permitir que os botões quebrem linha se necessário */
+        justify-content: flex-end;
+        margin-top: 8px; /* Reduzir a margem superior */
+        gap: 4px; /* Reduzir o gap entre os botões */
+    }
+
+    .gtoast-modal-button {
+        padding: 6px 12px; /* Reduzir o padding dos botões */
+        font-size: 12px; /* Reduzir o tamanho da fonte */
+    }
 }

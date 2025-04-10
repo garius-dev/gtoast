@@ -17,7 +17,6 @@
     <link href="src/css/index.css" rel="stylesheet" />
 
     <style>
-        
     </style>
 </head>
 <body>
@@ -68,7 +67,7 @@
                         <select id="theme" name="theme">
                             <option value="light" selected>Light</option>
                             <option value="dark">Dark</option>
-                            <option value="colored">Colored</option>
+                            <option value="colored" >Colored</option>
                         </select>
                     </div>
                     <div class="control-group">
@@ -150,6 +149,7 @@
                 </div>
                 <div id="trigger-button-group" class="control-button-group">
                     <button type="submit" class="playground-btn" id="show-toast-btn">Show Toast</button>
+                    <button type="button" class="playground-btn" id="show-modal-btn">Show Modal</button>
                     <button type="button" class="playground-btn" id="show-promise-btn">Show Promise</button>
                 </div>
                 <div class="sticky-toggle">
@@ -173,6 +173,7 @@
         const configOutput = document.getElementById('config-output');
         const showToastBtn = document.getElementById('show-toast-btn');
         const showPromiseBtn = document.getElementById('show-promise-btn');
+        const showModalBtn = document.getElementById('show-modal-btn');
         const stickyToggle = document.getElementById('stickyToggle');
         const triggerButtonGroup = document.getElementById('trigger-button-group');
 
@@ -247,6 +248,76 @@
             toast[type](message, title, options);
         });
 
+        showModalBtn.addEventListener('click', () => {
+            //const gtoast = new Gtoast({
+            //    theme: 'light',
+            //    transition: 'zoom', // Configura a transição como 'flip'
+            //    backdrop: true,
+            //    backdropClose: true,
+            //    infoIcon: '<i class="fa-solid fa-square-up-right"></i>',
+            //    dialogButtons: {
+            //        ok: { show: true },
+            //        yes: { show: true },
+            //        no: { show: true },
+            //        cancel: { show: true }
+            //    }
+            //});
+
+            
+
+            const type = form.type.value;
+            const message = form.message.value;
+            const title = form.title.value || null;
+
+            const options = {
+                type: type,
+                closeButton: form.closeButton.checked,
+                newestOnTop: form.newestOnTop.checked,
+                progressBar: form.progressBar.checked,
+                positionClass: form.positionClass.value,
+                autoClose: parseInt(form.autoClose.value) || false,
+                theme: form.theme.value,
+                transition: form.transition.value,
+                closeOnClick: form.closeOnClick.checked,
+                resetOnHover: form.resetOnHover.checked,
+                size: form.size.value,
+                mobileView: form.mobileView.checked,
+                successIcon: form.successIcon.value,
+                errorIcon: form.errorIcon.value,
+                infoIcon: form.infoIcon.value,
+                warningIcon: form.warningIcon.value,
+                closeButtonIcon: form.closeButtonIcon.value,
+                dialogButtons: {
+                    ok: { show: true },
+                    yes: { show: true },
+                    no: { show: true },
+                    cancel: { show: true }
+                }
+            };
+
+            const gtoast = new Gtoast(options);
+
+            gtoast.modal(
+                message,
+                title,
+                options,
+                (result, closeModal, buttons, eventButton) => {
+
+                    console.log(`Usuário escolheu: ${result}`);
+                    closeModal();
+                    //if (result === 'yes' || result === 'cancel') {
+                    //    // Aguardar 2 segundos antes de fechar o modal
+                    //    setTimeout(() => {
+                    //        closeModal();
+                    //    }, 2000);
+                    //} else {
+                    //    // Fechar imediatamente para outros botões
+                    //    closeModal();
+                    //}
+                }
+            );
+        });
+
         showPromiseBtn.addEventListener('click', () => {
             const options = {
                 closeButton: form.closeButton.checked,
@@ -288,6 +359,39 @@
                 triggerButtonGroup.classList.remove('sticky');
             }
         });
+
+        //const gtoast = new Gtoast({
+        //    theme: 'light',
+        //    transition: 'zoom', // Configura a transição como 'flip'
+        //    backdrop: true,
+        //    backdropClose: true,
+        //    infoIcon: '<i class="fa-solid fa-square-up-right"></i>',
+        //    dialogButtons: {
+        //        ok: { show: true },
+        //        yes: { show: false },
+        //        no: { show: true },
+        //        cancel: { show: true }
+        //    }
+        //});
+
+        //gtoast.modal(
+        //    "Operação concluída com êxito!",
+        //    "Redirect",
+        //    { type: 'info', size: 'md' },
+        //    (result, closeModal, buttons, eventButton) => {
+
+        //        console.log(`Usuário escolheu: ${result}`);
+        //        if (result === 'yes' || result === 'cancel') {
+        //            // Aguardar 2 segundos antes de fechar o modal
+        //            setTimeout(() => {
+        //                closeModal();
+        //            }, 2000);
+        //        } else {
+        //            // Fechar imediatamente para outros botões
+        //            closeModal();
+        //        }
+        //    }
+        //);
     </script>
 </body>
 </html>

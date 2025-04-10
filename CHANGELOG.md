@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.2.1](https://github.com/garius-dev/gtoast/compare/v1.2.0...v1.2.1) (2025-04-10)
+
+
+### Bug Fixes
+
+* avoid close modal with esc if not configured to do it ([f485663](https://github.com/garius-dev/gtoast/commit/f485663ab568048d9eabcac2740c3fe1c8725fe9))
+
 ## [1.2.0](https://github.com/garius-dev/gtoast/compare/v1.1.2...v1.2.0) (2025-04-10)
 
 

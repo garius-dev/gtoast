@@ -129,7 +129,7 @@
     }
 
     // Display a modal-style toast
-    modal(message, title = null, options = {}, callback) {
+    modal(message, title = null, options = {}) {
         const modalOptions = { ...this.options, ...options, positionClass: 'center-center', closeButton: false, closeOnClick: false };
         modalOptions.size = modalOptions.size === 'sm' ? 'md' : modalOptions.size; // Default to medium size for modals
 
@@ -189,7 +189,7 @@
         }
 
         const titleHtml = title ? `<div class="gtoast-title">${title}</div>` : '';
-        const buttonsHtml = this.createModalButtons({ ...modalOptions, dialogButtons: mergedButtons }, callback, toast, backdrop, transition);
+        const buttonsHtml = this.createModalButtons({ ...modalOptions, dialogButtons: mergedButtons }, toast, backdrop, transition);
 
         // Construct modal HTML
         toast.innerHTML = `
@@ -216,8 +216,6 @@
             this.close(toast, modalOptions, { backdrop, transition });
         };
 
-        
-
 
         // Setup backdrop close if enabled
         if (modalOptions.backdrop && modalOptions.backdropClose) {
@@ -241,19 +239,29 @@
 
         document.addEventListener('keydown', handleEsc);
 
-        return toast;
+        // Create a chainable Promise-like object
+        let hasThen = false;
+        const modalPromise = {
+            then: function (onFulfilled) {
+                hasThen = true;
+                if (!toast.__listeners) toast.__listeners = [];
+                toast.__listeners.push(onFulfilled);
+                return this; // Permite encadeamento
+            }
+        };
+
+        toast.__hasThen = () => hasThen;
+        return modalPromise;
     }
 
     // Generate HTML for modal buttons and attach click events
-    createModalButtons(options, callback, toast, backdrop, transition) {
+    createModalButtons(options, toast, backdrop, transition) {
         const { dialogButtons } = options;
         let buttonsHtml = '';
 
         const closeModal = () => {
             this.close(toast, options, { backdrop, transition });
         };
-
-        
 
         for (const [type, btnConfig] of Object.entries(dialogButtons)) {
             if (btnConfig.show) {
@@ -271,12 +279,21 @@
             buttons.forEach(button => {
                 button.addEventListener('click', (e) => {
                     const buttonType = button.getAttribute('data-type');
-                    debugger
-                    if (callback && buttonType !== 'cancel') {
-                        // If a callback is provided, use it and pass closeModal for manual control
-                        callback(buttonType, closeModal, buttons, button);
-                    } else {
-                        // Default behavior: close the modal
+                    const resultObject = {
+                        result: buttonType,
+                        closeModal,
+                        buttons,
+                        eventButton: button
+                    };
+
+                    const hasThen = toast.__hasThen();
+                    if (hasThen && toast.__listeners) {
+                        // Dispara todos os listeners registrados no .then()
+                        toast.__listeners.forEach(listener => listener(resultObject));
+                    }
+
+                    // Fecha automaticamente se não houver .then() ou se for 'cancel'
+                    if (!hasThen || buttonType === 'cancel') {
                         closeModal();
                     }
                 });

@@ -300,22 +300,16 @@
             gtoast.modal(
                 message,
                 title,
-                options,
-                (result, closeModal, buttons, eventButton) => {
-
-                    console.log(`Usuário escolheu: ${result}`);
-                    //closeModal();
-                    //if (result === 'yes' || result === 'cancel') {
-                    //    // Aguardar 2 segundos antes de fechar o modal
-                    //    setTimeout(() => {
-                    //        closeModal();
-                    //    }, 2000);
-                    //} else {
-                    //    // Fechar imediatamente para outros botões
-                    //    closeModal();
-                    //}
+                options
+            ).then(({ result, closeModal, buttons, eventButton }) => {
+                debugger
+                console.log('Resultado:', result); // Ex.: 'yes' ou 'no'
+                if (result === 'yes') {
+                    console.log('Confirmado!');
+                    closeModal(); // Fecha o modal só se for 'yes'
                 }
-            );
+            });
+
         });
 
         showPromiseBtn.addEventListener('click', () => {
